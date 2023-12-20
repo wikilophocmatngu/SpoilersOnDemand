@@ -1,0 +1,66 @@
+{
+	"name": "SOD",
+	"author": [
+		"SongNgu.xyz"
+	],
+	"version": "0.1",
+	"url": "https://www.mediawiki.org/wiki/Extension:SOD",
+	"descriptionmsg": "sod-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SOD\\": "src/"
+	},
+	"AutoloadClasses": {
+		"BoilerPlateHooks": "includes/BoilerPlateHooks.php",
+		"SpecialHelloWorld": "includes/SpecialHelloWorld.php"
+	},
+	"config": {
+		"SODEnableXYZ": {
+			"value": true,
+			"description": "Enables the foo functionality"
+		}
+	},
+	"callback": "BoilerPlateHooks::onExtensionLoad",
+	"ExtensionMessagesFiles": {
+		"SODAlias": "SOD.i18n.alias.php"
+	},
+	"Hooks": {
+		"SODHook": "SODHooks::onNameOfHook"
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.boilerPlate.foo": {
+			"scripts": [
+				"resources/ext.SOD.js",
+				"resources/ext.SOD.spoiler.js"
+			],
+			"styles": [
+				"resources/ext.SOD.gui.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SOD"
+	},
+	"SpecialPages": {
+		"SpoilerType": "SpecialSODManager"
+	},
+	{
+	"MessagesDirs": {
+		"SOD": [
+			"i18n"
+		]
+	}
+}
+	"manifest_version": 2
+}
+
