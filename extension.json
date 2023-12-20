@@ -1,66 +1,47 @@
 {
-	"name": "SOD",
-	"author": [
-		"SongNgu.xyz"
-	],
-	"version": "0.1",
-	"url": "https://www.mediawiki.org/wiki/Extension:SOD",
-	"descriptionmsg": "sod-desc",
-	"license-name": "GPL-2.0-or-later",
-	"type": "other",
-	"requires": {
-		"MediaWiki": ">= 1.35.0"
-	},
-	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\SOD\\": "src/"
-	},
-	"AutoloadClasses": {
-		"BoilerPlateHooks": "includes/BoilerPlateHooks.php",
-		"SpecialHelloWorld": "includes/SpecialHelloWorld.php"
-	},
-	"config": {
-		"SODEnableXYZ": {
-			"value": true,
-			"description": "Enables the foo functionality"
-		}
-	},
-	"callback": "BoilerPlateHooks::onExtensionLoad",
-	"ExtensionMessagesFiles": {
-		"SODAlias": "SOD.i18n.alias.php"
-	},
-	"Hooks": {
-		"SODHook": "SODHooks::onNameOfHook"
-	},
-	"MessagesDirs": {
-		"BoilerPlate": [
-			"i18n"
-		]
-	},
-	"ResourceModules": {
-		"ext.boilerPlate.foo": {
-			"scripts": [
-				"resources/ext.SOD.js",
-				"resources/ext.SOD.spoiler.js"
-			],
-			"styles": [
-				"resources/ext.SOD.gui.css"
-			]
-		}
-	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "SOD"
-	},
-	"SpecialPages": {
-		"SpoilerType": "SpecialSODManager"
-	},
-	{
-	"MessagesDirs": {
-		"SOD": [
-			"i18n"
-		]
-	}
+    "name": "SOD",
+    "author": "Vũ Minh Nguyên",
+    "url": "https://www.mediawiki.org/wiki/Extension:SOD",
+    "license-name": "GPL-2.0+",
+    "version": "0.0.1",
+    "namemsg": "sOD",
+    "descriptionmsg": "sOD-desc",
+    "manifest_version": 1,
+    "MessagesDirs": {
+        "SOD": [ "i18n" ]
+    },
+    "AutoloadClasses": {
+        "SpecialSpoilersManager": "specials/SpecialSpoilersManager.php"
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "modules",
+        "remoteExtPath": "SOD/modules"
+    },
+    "ResourceModules": {
+        "ext.sOD": {
+            "scripts": [
+                "ext.sOD.js"
+            ],
+            "styles": [
+                "ext.sOD.css"
+            ],
+            "messages": [
+                "sOD",
+                "sOD-desc",
+                "special-spoilersManager-title",
+                "special-spoilersManager-intro"
+            ],
+            "dependencies": []
+        }
+    },
+    "SpecialPages": {
+        "SpoilersManager": "SpecialSpoilersManager"
+    },
+    "ExtensionMessagesFiles": {
+        "SODAlias": "SOD.alias.php"
+    },
+    "Hooks": {
+        "ResourceLoaderTestModules": [ "SODHooks::onResourceLoaderTestModules" ]
+    },
+    "type": "other"
 }
-	"manifest_version": 2
-}
-

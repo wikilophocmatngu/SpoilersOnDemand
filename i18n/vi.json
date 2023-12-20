@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "pisceskaze"
+        ]
+    },
+    "sOD": "SpoilerOnDemand",
+    "sOD-desc": "Cho phép bảo quản viên thiết lập ẩn nội dung nhạy cảm theo cấp độ trên wiki. Ban đầu được phát triển cho [https://lophocmatngu.wiki Wiki Lớp Học Mật Ngữ].",
+    "special-spoilersManager-title": "Quản lý nội dung ẩn",
+    "special-spoilersManager-intro": "Trang đặc biệt này sẽ cho phép người dùng thiết lập các cấp độ nội dung ẩn theo mặc định cũng như kiểm tra các nội dung ẩn trên wiki."
+}

@@ -1,8 +1,11 @@
 {
-	"@metadata": {
-		"authors": [
-			"Your Name"
-		]
-	},
-	"boilerplate-desc": "{{desc|name=Boilerplate|url=https://www.mediawiki.org/wiki/Extension:Boilerplate}}"
+    "@metadata": {
+        "authors": [
+            "pisceskaze"
+        ]
+    },
+    "sOD": "The name of the extension",
+    "sOD-desc": "{{desc|name=SOD|url=https://www.mediawiki.org/wiki/Extension:SOD}}",
+    "special-spoilersManager-title": "Title of the special page Special:SpoilersManager",
+    "special-spoilersManager-intro": "Description appearing on top of <tvar|1>Special:{{ll|SpoilersManager}}</>."
 }

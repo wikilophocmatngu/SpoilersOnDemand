@@ -1,8 +1,11 @@
 {
-	"@metadata": {
-		"authors": [
-			"Your Name"
-		]
-	},
-	"boilerplate-desc": "This is an example extension"
+    "@metadata": {
+        "authors": [
+            "pisceskaze"
+        ]
+    },
+    "sOD": "SpoilerOnDemand",
+    "sOD-desc": "Allow sysops to setup spoilers warning and content hiding by default. First developed for [https://lophocmatngu.wiki Wiki Lớp Học Mật Ngữ].",
+    "special-spoilersManager-title": "Manage Spoilers",
+    "special-spoilersManager-intro": "This special pages manage spoilers types, warning contents and content hiding."
 }
